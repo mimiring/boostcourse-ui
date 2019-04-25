@@ -1,0 +1,345 @@
+body {
+
+    font-family: 나눔고딕, "돋움", sans-serif;
+    overflow: auto;
+    line-height: 1.2em;
+}
+
+div{
+    padding: 10px;
+}
+
+input {
+    height: 30px; /*임의값*/
+    margin: 5px 0; /*임의값*/
+    font-size: 12px;
+    color: #000;
+
+}
+button {
+    cursor:pointer;
+}
+select { 
+    width: 100%; 
+    height: 35px; /*임의값*/
+}
+
+table, th, tr, td {
+    border-collapse: collapse;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+dl {
+    padding: 0 10px; /*들여쓰기 하고 싶음*/
+}
+dd {
+    margin: 0;
+}
+ul {
+    padding: 0 0 0 10px;
+    line-height: 17px;
+}
+li {
+    margin: 15px; /*위아래가 너무 붙음*/
+    line-height: 17px;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #000;
+
+}
+
+a { text-decoration: none;}
+
+.body {
+    padding: 0;
+    width: 1080px;
+}
+.title {
+    background-color: black;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    height: 60px; /* 전체 높이가 120px인데 위아래로 패딩 40px씩 줘서 나머지값 넣음*/
+    line-height: 60px;
+    padding: 40px;
+
+}
+.contents {
+    padding: 40px;
+    border: 1px solid #d1d1d1;
+    border-bottom: 
+}
+.menu {
+    border: 1px solid #d1d1d1;
+    width: 304px; /* (1000px(전체 가로)-14*2(메뉴 간격)-10*2(div 임의 패딩값)/3 */
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    display: inline-block;
+}
+.menu:hover { 
+    border: 1px solid #454545; /*1px 안주니까 테두리 굵어지면서 전체화면이 움직임*/
+    font-weight: bold; 
+    }
+.first_title {
+    margin: 40px 0; /* 넣어야 띄워질 거 같음..*/
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #454545;
+    padding-bottom: 20px; /* 띄워서 선 넣으려니까 글씨밑에 바로 생겨서 패딩 넣음*/
+}
+
+
+.seccond_title {   
+    background-color: #f7f7f7; 
+    border: 1px solid #d1d1d1;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.form {
+    border: 1px solid #d1d1d1;
+    border-top: none;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.table {
+    width: 940px; /* 1080-40*2(첫번째 패딩)-30*2(두번째 패딩)*/
+    height: 210px;
+ }
+.table1_border {
+    border: 1px solid #e4e4e4;
+
+}
+.caption{
+    text-align: left;
+    padding-bottom: 10px;
+
+}
+.thead{
+    background-color: #fbfbfb;
+    }
+.td_title{
+    font-weight: bold;
+}
+
+.th_bcolor {
+    text-align: center;
+    background-color: #fbfbfb;
+}
+.th{
+    width: 15%
+}
+.table2 {
+    width: 940px; /* 1080-40*2(첫번째 패딩)-30*2(두번째 패딩)*/
+    height: 120px;
+}
+.table2_border {
+    border-top: 2px solid #a5a5a5;
+    border-bottom: 1px solid #e4e4e4;
+}
+.number_align{
+    text-align: right;
+}
+.tfoot{
+    font-weight: bold;
+}
+
+
+
+.contents_title {
+    padding-left: 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.join_box { 
+    padding: 0;
+ }
+.join_menu {
+    padding: 20px; /* 패딩값이 있어야 들여쓰기가 될 거 같음.. */
+    background-color: #fbfbfb;
+    border: 1px solid #e4e4e4;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+} 
+.join_middle_menu {
+    width: 100%; /*박스선 1px씩 있어서 안맞는건가..ㅠㅠ*/
+}
+.gender {
+    margin-right: 20px; /* 마진값을 줘야 할 거 같음..*/
+}
+.certification {
+    margin: 5px; /* 띄워놓고 싶음 */
+    width: 100%; /* 임의값 */
+    height: 35px; /*임의값*/
+    border: 1px #08a600;
+    background-color: #4ec53d;
+    font-size: 12px;
+    color: #fff;
+        
+}
+.center_button {
+    vertical-align: middle;
+}
+.hobby_name {
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+    padding-left: 5px; /*글씨 너무 달라붙어서 넣음*/
+    margin-right: 20px; /*오른쪽 간격 주고 싶음*/
+}
+.submit {
+    width: 100%;
+    height: 50px; /*임의값*/
+    border: 1px #08ab00;
+    background-color: #4ec53d;
+    font-size: 16px;
+    color: #fff;
+}
+.list_box{
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 21px;
+}
+
+
+.list_title{
+    margin: 20px 0; /*위 아래 띄우고 싶음*/
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    font-weight: bold;
+}
+.source {
+    margin: 5px; /*글씨가 너무 붙어서 임의값*/
+    font-size: 12px;
+    color: #559bfa;
+}
+.dd{
+    margin: 5px 0; /*글씨가 너무 붙어서 임의값*/
+
+}
+.list_number {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    font-size: 10px;
+    margin-right: 10px; /*글씨 너무 붙어서 띄움*/
+    text-align: center;
+    color: #666;
+}
+
+.chart:hover { 
+    text-decoration: underline;
+    }
+
+.bold {
+    font-weight: bold;
+}
+.red {
+    color: #ec5336;
+}
+
+.link {
+    color: #559bfa;
+    text-decoration: underline;
+}
+
+img { 
+        float: left;
+
+}
+.news_box {
+    padding: 0 0 10px 0;
+    margin-bottom: 20px;
+    border-bottom : 1px solid #e4e4e4;
+}
+
+.text {
+    font-size : 12px;
+    color: #000   
+}
+.headline {
+    font-size: 14px;
+    color: #00C;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 0;
+}
+.newsimg {
+    margin: 10px;
+    margin-left: 0;
+}
+
+
+.cuttoon {
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #71b036;
+    background-color: #80c83d;
+    font-size: 10px;
+    color: #fff;
+}
+.smarttoon {
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #df4e28;
+    background-color: #ec5336;
+    font-size: 10px;
+    color: #fff;
+}
+.webtoon_box1 {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 20px;
+    vertical-align: top;
+}
+.webtoon_box2 {
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 20px;
+    vertical-align: top;
+}
+.webtoon_box3 {
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+    vertical-align: top;
+    position: absolute; /*어거지..*/
+    float: right; /*어거지..*/
+}
+.webtoonimg {
+    margin-bottom: 10px;
+}
+.webtoon:hover { 
+    text-decoration: underline
+
+}
+
+.bottom {
+    height: 110px;
+    border-top: 1px solid #d1d1d1;
+    padding: 20px 0;
+    
+}
+.address {
+    font-size: 12px;
+    color: #999;
+    padding: 0;
+    text-align: center;
+}
+.copyright {
+    padding : 0;
+    text-align: center;
+}
