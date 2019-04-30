@@ -5,9 +5,7 @@ body {
     line-height: 1.2em;
 }
 
-div{
-    padding: 10px;
-}
+
 
 input {
     height: 30px; /*임의값*/
@@ -22,6 +20,7 @@ button {
 select { 
     width: 100%; 
     height: 35px; /*임의값*/
+    margin-bottom: 20px;
 }
 
 table, th, tr, td {
@@ -41,19 +40,10 @@ ul {
     padding: 0 0 0 10px;
     line-height: 17px;
 }
-li {
-    margin: 15px; /*위아래가 너무 붙음*/
-    line-height: 17px;
-    vertical-align: middle;
-    font-size: 12px;
-    color: #000;
-
-}
 
 a { text-decoration: none;}
 
 .body {
-    padding: 0;
     width: 1080px;
 }
 .title {
@@ -65,6 +55,7 @@ a { text-decoration: none;}
     line-height: 60px;
     padding: 40px;
 
+
 }
 .contents {
     padding: 40px;
@@ -72,6 +63,7 @@ a { text-decoration: none;}
     border-bottom: 
 }
 .menu {
+    padding: 8px;
     border: 1px solid #d1d1d1;
     width: 304px; /* (1000px(전체 가로)-14*2(메뉴 간격)-10*2(div 임의 패딩값)/3 */
     font-size: 16px;
@@ -94,23 +86,26 @@ a { text-decoration: none;}
 
 
 .seccond_title {   
+    padding: 8px;
     background-color: #f7f7f7; 
     border: 1px solid #d1d1d1;
     font-size: 14px;
     font-weight: bold;
     color: #333;
+    margin: 0;
 
 }
 
 .form {
     border: 1px solid #d1d1d1;
     border-top: none;
-    padding: 30px;
+    padding: 35px 30px;
     margin-bottom: 20px;
 }
 .table {
     width: 940px; /* 1080-40*2(첫번째 패딩)-30*2(두번째 패딩)*/
     height: 210px;
+    margin-bottom: 40px;
  }
 .table1_border {
     border: 1px solid #e4e4e4;
@@ -154,12 +149,14 @@ a { text-decoration: none;}
 
 .contents_title {
     padding-left: 0;
+    padding-bottom: 10px;
     font-size: 14px;
     color: #000;
     font-weight: bold;
 }
 .join_box { 
     padding: 0;
+    width: 100%;
  }
 .join_menu {
     padding: 20px; /* 패딩값이 있어야 들여쓰기가 될 거 같음.. */
@@ -171,6 +168,9 @@ a { text-decoration: none;}
 } 
 .join_middle_menu {
     width: 100%; /*박스선 1px씩 있어서 안맞는건가..ㅠㅠ*/
+}
+.join_contents {
+    margin-bottom: 5px;
 }
 .gender {
     margin-right: 20px; /* 마진값을 줘야 할 거 같음..*/
@@ -186,6 +186,7 @@ a { text-decoration: none;}
         
 }
 .center_button {
+    margin: 0;
     vertical-align: middle;
 }
 .hobby_name {
@@ -206,8 +207,8 @@ a { text-decoration: none;}
 .list_box{
     border: 1px solid #e4e4e4;
     margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 21px;
+    padding: 20px 21px 20px 20px;
+    margin-top: 0;
 }
 
 
@@ -219,14 +220,21 @@ a { text-decoration: none;}
     font-weight: bold;
 }
 .source {
-    margin: 5px; /*글씨가 너무 붙어서 임의값*/
+    margin-left: 5px; /*글씨가 너무 붙어서 임의값*/
     font-size: 12px;
     color: #559bfa;
 }
-.dd{
-    margin: 5px 0; /*글씨가 너무 붙어서 임의값*/
-
+.dt_title{
+    padding-left: 0;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
 }
+.dd {
+    margin: 0px 0; /*글씨가 너무 붙어서 임의값*/
+    }       
+
 .list_number {
     width: 17px;
     height: 17px;
@@ -237,11 +245,27 @@ a { text-decoration: none;}
     text-align: center;
     color: #666;
 }
-
+.chart_box {
+    border: 1px solid #e4e4e4;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-top: 0;
+}
+.chart {
+    list-style: none;
+    margin: 20px; /*위아래가 너무 붙음*/
+    line-height: 17px;
+    vertical-align: middle;
+}
 .chart:hover { 
     text-decoration: underline;
     }
-
+.guidance {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #559bfa;
+}
 .bold {
     font-weight: bold;
 }
@@ -255,13 +279,25 @@ a { text-decoration: none;}
 }
 
 img { 
-        float: left;
 
+    float: left;
+}
+a {}
+
+.news_wrap{
+    border: 1px solid #e4e4e4;
+    padding-left: 20px;
+    padding-right: 21px;
+    margin-bottom: 20px;
+
+    margin-top: 0;
 }
 .news_box {
-    padding: 0 0 10px 0;
-    margin-bottom: 20px;
+    list-style: none;
+    padding: 0 0 20px 0;
+    
     border-bottom : 1px solid #e4e4e4;
+    position: relative;
 }
 
 .text {
@@ -273,13 +309,18 @@ img {
     color: #00C;
     font-weight: bold;
     text-decoration: underline;
-    padding-bottom: 0;
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
 .newsimg {
-    margin: 10px;
-    margin-left: 0;
+    float:left;
+    display: inline-block;
+    margin: 20px 10px 20px 0;
 }
-
+.news_description {
+    margin: 0 0 10px 0;
+    line-height: 18px;
+}
 
 .cuttoon {
     display: inline-block;
@@ -299,28 +340,23 @@ img {
 }
 .webtoon_box1 {
     display: inline-block;
-    padding-left: 0;
-    padding-right: 0;
-    margin-right: 20px;
+    padding: 0;
+    margin: 20px 0 0 20px;
     vertical-align: top;
 }
+
 .webtoon_box2 {
     display: inline-block;
     padding-right: 0;
     padding-left: 0;
-    margin-right: 20px;
     vertical-align: top;
-}
-.webtoon_box3 {
-    display: inline-block;
-    padding-right: 0;
-    padding-left: 0;
-    vertical-align: top;
-    position: absolute; /*어거지..*/
-    float: right; /*어거지..*/
+    margin: 20px 0 0 21px;
 }
 .webtoonimg {
-    margin-bottom: 10px;
+    margin: 0;
+}
+.webtoon_title{
+    margin-bottom: 10px;    
 }
 .webtoon:hover { 
     text-decoration: underline
@@ -342,4 +378,19 @@ img {
 .copyright {
     padding : 0;
     text-align: center;
+}
+
+
+.guidance_box {
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    padding: 20px 20px 21px 20px;
+    margin-top: 0;
+}
+.webtoon_wrap {
+    padding-right: 0;  
+    padding-left: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    border: 1px solid #e4e4e4;
 }
