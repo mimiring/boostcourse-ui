@@ -7,12 +7,14 @@
     </head>
 
     <body>
-        <h1 class="title">포트폴리오</h1>
+        <div class="head">
+                <h1 class="title">포트폴리오</h1>
+        </div>
         <div class="body">
         <div class="contents">
-            <div class="menu" margin-right: 14px;>테이블 요소</div>
-            <div class="menu" margin-right: 14px;>폼 요소</div>
-            <div class="menu">리스트 요소</div>
+            <div class="menu_wrap">
+                <div class="menu_size"><div class="menu">테이블 요소</div></div><div class="menu_size"><div class="menu">폼 요소</div></div><div class="menu_size" style="right: -14px;"><div class="menu" >리스트 요소</div></div>
+            </div>
 
             <h2 class="first_title">구성 요소</h2>
             
@@ -300,25 +302,23 @@
 <!--***********************************************************************-->
             <h3 class="seccond_title">리스트 요소</h3>
             <div class="form">
-            <div class="contents_title">
-                '프로젝트' 사전 검색 결과
-            </div>
-            <div  class="list_box">
-            <div class="list_title">프로젝트</div>
-            <br>
+                <div class="contents_title">
+                    '프로젝트' 사전 검색 결과
+                </div>
+                <div  class="list_box">
+                <div class="list_title">프로젝트</div>
+                    <dl>
+                        <dt class="dt_title">프로젝트<span class="source">영양학사전</span></dt>
+                        <dd class="dd text">연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획. 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 일반적으로는 특정한 목표, 계획을 위한 학습활동, 실행계획 등을 가리킨다.</dd>
+                    </dl>
+                    <dl>
+                        <dt class="dt_title">프로젝트<span class="source">Basic 중학생을 위한 기술, 가정 용어 사전</span></dt>
+                        <dd class="dd text">어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는 단위 작업이나 사업.</dd>
+                    </dl>
+                
 
-            <dl>
-                <dt class="dt_title">프로젝트<span class="source">영양학사전</span></dt>
-                <dd class="dd text">연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획. 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 일반적으로는 특정한 목표, 계획을 위한 학습활동, 실행계획 등을 가리킨다.</dd>
-            </dl>
-            <dl>
-                <dt class="dt_title">프로젝트<span class="source">Basic 중학생을 위한 기술, 가정 용어 사전</span></dt>
-                <dd class="dd text">어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는 단위 작업이나 사업.</dd>
-            </dl>
-            </div>
-
-            <div class="contents_title">실시간 검색어</div>
-            <ul class="chart_box" style="width: 250px; margin-bottom: 20px"> <!--width 임의값-->
+                <div class="contents_title">실시간 검색어</div>
+                <ul class="chart_box" style="width: 250px; margin-bottom: 20px"> <!--width 임의값-->
                     <a href="#" class="chart text"><li style="margin-left:0px"><span class="list_number">1</span>입추</li></a>
                     <a href="#" class="chart text"><li style="margin-left:0px"><span class="list_number">2</span>런닝맨 유재석</li></a>
                     <a href="#" class="chart text"><li style="margin-left:0px"><span class="list_number">3</span>런닝맨</li></a>
@@ -330,10 +330,7 @@
                     <a href="#" class="chart text"><li style="margin-left:0px"><span class="list_number">9</span>한국사능력검정시험</li></a>
                     <a href="#" class="chart text"><li style="margin-left:0px"><span class="list_number">10</span>맛있는 녀석들</li></a>
                 </ul>
-            
-
-
-            <div class="contents_title">쿠키 이용안내</div>
+             <div class="contents_title">쿠키 이용안내</div>
                 <ul class="guidance_box">
                         <li class="guidance text bold">웹툰 작품은 쿠키를 이용하여 대여/구매 하실 수 있습니다.</li>
                         <li class="guidance text">쿠키 구매 시 지급되는 보너스 쿠키의 수량은 변경될 수 있으며, <span class="red">유효기간은 지급 후 90일</span>입니다.</li>
@@ -370,80 +367,75 @@
             <div class="contents_title">웹툰</div>
                 <ul class="webtoon_wrap">
                     <li class="webtoon_box1">
-                        <div class="img_warp">
-                            <a href="#" class="webtoon">
-                                <div class="wrap"><img src="./thumbnail2.jpg" alt="웹툰 하루 3컷" class="webtoonimg">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="text_wrap">
-                            <a href="#" class="webtoon"><div class="webtoon_title text bold">하루 3컷</div></a>
-                            <a href="#" class="webtoon"><div class="text">17화 편리하게 피곤하게</div></a>
-                        </div>
-                    </li>
-                    <li class="webtoon_box1">
-                        <div class="img_warp">
-                            <a href="#" class="webtoon">
-                                <div class="wrap"><img src="./thumbnail2.jpg" alt="웹툰 유미의 세포들" class="webtoonimg">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="text_wrap">
-                            <a href="#" class="webtoon"><div class="webtoon_title text bold"><div class="cuttoon">컷툰</div>유미의 세포들</div></a>
-                            <a href="#" class="webtoon"><div class="text">326화 미래에서 온 텔레파시</div></a>
-                        </div>
-                    </li>
-                    <li class="webtoon_box1">
-                        <div class="img_warp">
-                            <a href="#" class="webtoon">
-                                <div class="wrap"><img src="./thumbnail2.jpg" alt="웹툰 이말년씨리즈" class="webtoonimg">
-                                </div>
-                            </a>
-                        </div>
-                            <div class="text_wrap">
-                                <a href="#" class="webtoon"><div class="webtoon_title text bold">이말년씨리즈</div></a>
-                                <a href="#" class="webtoon"><div class="text">58화 공포의 떡볶이</div></a>
+                        <a href="#" class="webtoon">
+                            <div class="img_wrap">
+                                <img src="./thumbnail2.jpg" alt="웹툰 하루 3컷" class="webtoonimg">
                             </div>
-                        </li>        
-            
-                        <li class="webtoon_box1">
-                                <div class="img_warp">
-                                    <a href="#" class="webtoon">
-                                        <div class="wrap"><img src="./thumbnail2.jpg" alt="웹툰 덴마" class="webtoonimg">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text_wrap">
-                                    <a href="#" class="webtoon"><div class="webtoon_title text bold"><div class="smarttoon">스마트툰</div>덴마</div></a>
-                                    <a href="#" class="webtoon"><div class="text">195화 1.다이크(195)</div></a>
-                                </div>
-                            </li>
-                            <li class="webtoon_box1">
-                                <div class="img_warp">
-                                    <a href="#" class="webtoon">
-                                        <div class="wrap"><img src="./thumbnail2.jpg" alt="1인용 기분" class="webtoonimg">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="text_wrap">
-                                    <a href="#" class="webtoon"><div class="webtoon_title text bold"><div class="cuttoon">컷툰</div>1인용 기분</div></a>
-                                    <a href="#" class="webtoon"><div class="text">20화 평가</div></a>
-                                </div>
-                            </li>
-                        <li class="webtoon_box1">
+                            <div class="text_wrap">
+                                <div class="webtoon_title text bold">하루 3컷</div>
+                                <div class="text">17화 편리하게 피곤하게</div>
+                        </a>
+                    </li>
+                    <li class="webtoon_box1">
+                        <a href="#" class="webtoon">
+                            <div class="img_wrap">
+                                <img src="./thumbnail2.jpg" alt="웹툰 유미의 세포들" class="webtoonimg">
+                            </div>
+                            <div class="text_wrap">
+                                <div class="cuttoon">컷툰</div><div class="webtoon_title text bold">유미의 세포들</div></a>
+                                <div class="text">326화 미래에서 온 텔레파시</div>
+                            </div>
+                        </a>
+                        
+                    </li>
+                    <li class="webtoon_box1">
+                        <a href="#" class="webtoon">
                             <div class="img_warp">
-                                <a href="#" class="webtoon">
-                                    <div class="wrap"><img src="./thumbnail2.jpg" alt="웹툰 찬란하지 않아도 괜찮아" class="webtoonimg">
-                                    </div>
-                                </a>
+                                <img src="./thumbnail2.jpg" alt="웹툰 이말년씨리즈" class="webtoonimg">
                             </div>
                             <div class="text_wrap">
-                                <a href="#" class="webtoon"><div class="webtoon_title text bold">찬란하지 않아도 괜찮아</div></a>
-                                <a href="#" class="webtoon"><div class="text">56화 숨길 수 없어요.</div></a>
+                                <div class="webtoon_title text bold">이말년씨리즈</div></a>
+                                <div class="text">58화 공포의 떡볶이</div>
                             </div>
-                        </li> 
+                        </a>
+                    </li>        
+            
+                    <li class="webtoon_box1">
+                        <a href="#" class="webtoon">
+                           <div class="img_warp">
+                                <img src="./thumbnail2.jpg" alt="웹툰 덴마" class="webtoonimg">
+                            </div>
+                            <div class="text_wrap">
+                                <div class="smarttoon">스마트툰</div><div class="webtoon_title text bold">덴마</div></a>
+                                <div class="text">195화 1.다이크(195)</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webtoon_box1">
+                        <a href="#" class="webtoon">
+                            <div class="img_wrap">
+                                <img src="./thumbnail2.jpg" alt="1인용 기분" class="webtoonimg">
+                            </div>
+                            <div class="text_wrap">
+                                <div class="cuttoon">컷툰</div><div class="webtoon_title text bold">1인용 기분</div></a>
+                               <div class="text">20화 평가</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="webtoon_box1">
+                        <a href="#" class="webtoon">
+                            <div class="img_warp">
+                                <img src="./thumbnail2.jpg" alt="웹툰 찬란하지 않아도 괜찮아" class="webtoonimg">
+                            </div>
+                            <div class="text_wrap">
+                                <div class="webtoon_title text bold">찬란하지 않아도 괜찮아</div></a>
+                                <div class="text">56화 숨길 수 없어요.</div>
+                            </div>
+                        </a>
+                    </li> 
                 </ul>
             </div>
+        </div>
         </div>
         </div>
             <div class="bottom">

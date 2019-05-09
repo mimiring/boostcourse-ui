@@ -1,4 +1,5 @@
-html, body, div {
+html, body, div, input, button, select, table, th, tr, td, dl, dd, ul, li, ol, a, span, h1, h2, h3, label, form 
+{
     margin: 0;
     padding: 0;
 
@@ -6,7 +7,7 @@ html, body, div {
 
 
 body {
-    font-family: 나눔고딕, "돋움", sans-serif;
+    font-family: 나눔고딕, "NanumGothic", "돋움", sans-serif;
     font-size: 12px;
     color: #000;
 }
@@ -43,36 +44,49 @@ ul {
 
 a { text-decoration: none; }
 
+.head {
+    padding: 40px;
+    height: 60px;
+    background-color: black;
+
+}
 .body {
     width: 1080px;
+    
 }
 .title {
-    background-color: black;
     font-size: 40px;
     color: #fff;
     font-weight: bold;
-    height: 60px; /* 전체 높이가 120px인데 위아래로 패딩 40px씩 줘서 나머지값 넣음*/
     line-height: 60px;
-    padding: 40px;
 }
-.contents {
-    padding: 40px;
-    border: 1px solid #d1d1d1;
-    border-bottom: 
+.contents { 
+    margin: 40px;
+
 }
-.menu {
-    padding: 8px;
-    border: 1px solid #d1d1d1;
-    width: 304px; /* (1000px(전체 가로)-14*2(메뉴 간격)-10*2(div 임의 패딩값)/3 */
-    font-size: 16px;
-    color: #000;
-    text-align: center;
+.menu_size {
+    width: 33%;
     display: inline-block;
+
 }
-.menu:hover { 
-    border: 1px solid #454545; /*1px 안주니까 테두리 굵어지면서 전체화면이 움직임*/
+ .menu {
+    margin-right: 14px;
+    padding : 5px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+
+}
+
+/*.menu:last-child {
+    margin-right: 0;
+}*/
+/*.menu:hover { 
+    border: 1px solid #454545; 
     font-weight: bold; 
-    }
+    }*/
 .first_title {
     margin: 40px 0; /* 넣어야 띄워질 거 같음..*/
     font-size: 20px;
@@ -84,7 +98,7 @@ a { text-decoration: none; }
 
 
 .seccond_title {   
-    padding: 8px;
+    padding: 15px;
     background-color: #f7f7f7; 
     border: 1px solid #d1d1d1;
     font-size: 14px;
@@ -101,7 +115,7 @@ a { text-decoration: none; }
     margin-bottom: 20px;
 }
 .table {
-    width: 940px; /* 1080-40*2(첫번째 패딩)-30*2(두번째 패딩)*/
+    width: 100%;
     height: 210px;
     margin-bottom: 40px;
  }
@@ -129,7 +143,7 @@ a { text-decoration: none; }
     width: 15%
 }
 .table2 {
-    width: 940px; /* 1080-40*2(첫번째 패딩)-30*2(두번째 패딩)*/
+    width: 100%;
     height: 120px;
 }
 .table2_border {
@@ -246,14 +260,14 @@ a { text-decoration: none; }
 
 
 .list_title{
-    margin: 20px 0; /*위 아래 띄우고 싶음*/
+    margin: 20px 0;
     text-align: center;
     font-size: 32px;
     color: #000;
     font-weight: bold;
 }
 .source {
-    margin-left: 5px; /*글씨가 너무 붙어서 임의값*/
+    margin-left: 5px;
     font-size: 12px;
     color: #559bfa;
 }
@@ -265,8 +279,9 @@ a { text-decoration: none; }
     font-weight: bold;
 }
 .dd {
-    margin: 0px 0; /*글씨가 너무 붙어서 임의값*/
-    }       
+    margin-bottom: 20px;
+    line-height: 20px;    
+}       
 
 .list_number {
     width: 17px;
@@ -295,9 +310,13 @@ a { text-decoration: none; }
     }
 .guidance {
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 12px;
     color: #559bfa;
+}
+.guidance:last-child {
+    content: '';
+    margin-bottom: 0;
 }
 .bold {
     font-weight: bold;
@@ -305,17 +324,10 @@ a { text-decoration: none; }
 .red {
     color: #ec5336;
 }
-
 .link {
     color: #559bfa;
     text-decoration: underline;
 }
-
-img { 
-
-    float: left;
-}
-
 
 .news_wrap{
     border: 1px solid #e4e4e4;
@@ -376,29 +388,34 @@ img {
     color: #fff;
 }
 
+.webtoon_wrap {
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    border: 1px solid #e4e4e4;  
+}
 .webtoon_wrap .webtoon_title{
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 3px;    
+    margin-top: 10px;
+    margin-bottom: 3px;
+    display: inline-block;    
 }
 .webtoon_box1 {
     display: inline-block;
     padding: 0;
-    margin: 20px 0 0 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     vertical-align: top;
 }
-.webtoon_box2 {
-    display: inline-block;
-    padding-right: 0;
-    padding-left: 0;
-    vertical-align: top;
-    margin: 20px 0 0 21px;
+.webtoon_box1:nth-child(3n) {
+    margin-right: 21px;
 }
-.webtoonwrap {
-    display: inline-block;
-}
+
+
 .webtoonimg {
+    width: 285px;
+    height: 140px;
     margin: 0;
+    display: block;
 }
 
 .webtoon:hover { 
@@ -429,11 +446,4 @@ img {
     margin-bottom: 20px;
     padding: 20px 20px 21px 20px;
     margin-top: 0;
-}
-.webtoon_wrap {
-    padding-right: 0;  
-    padding-left: 0;
-    padding-bottom: 20px;
-    margin: 0;
-    border: 1px solid #e4e4e4;
 }
