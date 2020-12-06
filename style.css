@@ -131,8 +131,7 @@ a {
 .form {
   border: 1px solid #d1d1d1;
   border-top: none;
-  padding: 35px 30px;
-  margin-bottom: 20px;
+  padding: 30px;
 }
 .table {
   border-collapse: collapse;
