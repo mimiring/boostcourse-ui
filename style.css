@@ -23,7 +23,6 @@ form {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 나눔고딕, "NanumGothic", "돋움", sans-serif;
   font-size: 12px;
@@ -40,7 +39,9 @@ select {
   height: 35px; /*임의값*/
   margin-bottom: 20px;
 }
-
+caption {
+  text-align: left;
+}
 table,
 th,
 tr,
@@ -83,31 +84,26 @@ a {
   padding: 0 40px;
   width: 1000px;
 }
-.menu_wrap {
+.global_link_wrap {
   margin: 0 -7px;
   font-size: 0;
 }
-.menu_size {
+.global_link {
   margin: 0 7px;
   width: 324px;
   display: inline-block;
-}
-.menu {
   padding: 5px;
   border: 1px solid #d1d1d1;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #000;
 }
-
-/*.menu:last-child {
-    margin-right: 0;
-}*/
-/*.menu:hover { 
-    border: 1px solid #454545; 
-    font-weight: bold; 
-    }*/
+.global_link:hover {
+  border: 1px solid #454545;
+  font-weight: bold;
+}
 .first_title {
   margin-top: 40px;
   font-size: 20px;
@@ -116,7 +112,6 @@ a {
   border-bottom: 1px solid #454545;
   padding-bottom: 20px;
 }
-
 .second_title {
   margin-top: 30px;
   padding: 13px 15px;
@@ -127,57 +122,58 @@ a {
   font-weight: bold;
   color: #333;
 }
-
-.form {
+.contents {
   border: 1px solid #d1d1d1;
   border-top: none;
   padding: 30px;
+  font-size: 12px;
+  color: #000;
 }
-.table {
+.size_table {
   border-collapse: collapse;
   width: 100%;
   height: 210px;
   margin-bottom: 40px;
 }
-.table1_border {
+.size_table th,
+.size_table td {
   border: 1px solid #e4e4e4;
 }
-.caption {
-  text-align: left;
-  padding-bottom: 10px;
+.table_title {
+  width: 15%;
 }
-.thead {
-  background-color: #fbfbfb;
-}
-.td_title {
-  font-weight: bold;
-}
-
-.th_bcolor {
+.table_title_wrap {
   text-align: center;
   background-color: #fbfbfb;
 }
-.th {
-  width: 15%;
-}
-.table2 {
+.refund_table {
   width: 100%;
   height: 120px;
+  border-collapse: collapse;
+  font-size: 12px;
+  color: #555;
 }
-.table2_border {
+.refund_table_title {
   border-top: 2px solid #a5a5a5;
   border-bottom: 1px solid #e4e4e4;
+  background-color: #fbfbfb;
 }
-.number_align {
+.refund_table_title:first-child {
+  width: 35%;
+}
+.refund_table_title:last-child {
+  width: 25%;
+}
+.cost {
   text-align: right;
 }
-.tfoot {
+.refund_table tfoot td {
+  border-top: 2px solid #a5a5a5;
+  border-bottom: 1px solid #e4e4e4;
   font-weight: bold;
 }
-
 .contents_title {
-  padding-left: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
   color: #000;
   font-weight: bold;
@@ -434,22 +430,19 @@ a {
   text-decoration: underline;
 }
 
-.bottom {
-  height: 110px;
+.footer {
   border-top: 1px solid #d1d1d1;
-  padding: 20px 0;
+  padding: 30px 0;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
 }
 .address {
-  font-size: 12px;
   color: #999;
-  padding: 0;
-  text-align: center;
 }
 .copyright {
-  padding: 0;
-  text-align: center;
+  color: #000;
 }
-
 .guidance_box {
   border: 1px solid #e4e4e4;
   margin-bottom: 20px;
