@@ -34,11 +34,6 @@ input {
 button {
   cursor: pointer;
 }
-select {
-  width: 33%;
-  height: 35px; /*임의값*/
-  margin-bottom: 20px;
-}
 caption {
   text-align: left;
 }
@@ -186,30 +181,42 @@ a {
   padding: 20px; /* 패딩값이 있어야 들여쓰기가 될 거 같음.. */
   background-color: #fbfbfb;
   border: 1px solid #e4e4e4;
+}
+.join_input {
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  color: #000;
+}
+.join_contents {
+  margin-bottom: 20px;
+}
+.join_contents .contents_label {
+  display: block;
+  margin-bottom: 10px;
   font-size: 14px;
   color: #000;
   font-weight: bold;
 }
-.join_menu input {
-  margin-bottom: 20px;
+.join_contents .birtch_wrap {
+  margin-right: -8px;
+  font-size: 0;
 }
-.join_middle_menu {
-  width: 100%;
-  height: 30px;
-}
-.join_contents {
-  margin-bottom: 5px;
-}
-.join_contents label {
+.join_contents .birth_select_wrap {
   display: inline-block;
-  margin-bottom: 5px;
+  padding-right: 8px;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+.join_contents .birth_select_wrap .birth_select {
+  height: 30px;
+  width: 100%;
+  font-size: 12px;
+  color: #000;
 }
 .gender {
-  margin-right: 20px;
-  margin-bottom: 15px;
+  margin-right: 60px;
   display: inline-block;
-  line-height: 20px;
-  top: 0;
 }
 .gender .center_button {
   display: inline-block;
@@ -240,7 +247,10 @@ a {
   font-size: 12px;
   color: #fff;
 }
-
+.hobby_wrap {
+  display: inline-block;
+  margin-right: 67px;
+}
 .hobby .center_button {
   position: relative;
   top: 3.5px;
@@ -251,7 +261,13 @@ a {
   line-height: 16px;
   color: #000;
   font-weight: normal;
-  margin-right: 15px; /*오른쪽 간격 주고 싶음*/
+  vertical-align: middle;
+}
+.introduce {
+  display: block;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
 }
 .submit {
   width: 100%;
