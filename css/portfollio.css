@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html,
 body,
 div,
@@ -25,12 +27,13 @@ form {
   padding: 0;
 }
 body {
-  font-family: 나눔고딕, "NanumGothic", "돋움", sans-serif;
+  font-family: "나눔 고딕", NanumGothic, "돋움", Dotum, sans-serif;
   font-size: 12px;
   color: #000;
 }
 input {
   box-sizing: border-box;
+  border: 1px solid #e4e4e4;
 }
 button {
   cursor: pointer;
@@ -120,7 +123,7 @@ a {
 }
 .second_title {
   margin-top: 30px;
-  padding: 13px 15px;
+  padding: 12px 15px;
   background-color: #f7f7f7;
   border: 1px solid #d1d1d1;
   line-height: 20px;
@@ -153,6 +156,11 @@ a {
 .size_table td {
   border: 1px solid #e4e4e4;
 }
+
+.td_title {
+  font-weight: bold;
+}
+
 .table_title {
   width: 15%;
 }
@@ -168,19 +176,27 @@ a {
   color: #555;
 }
 .refund_table_title {
+  /* width: 25%; */
   border-top: 2px solid #a5a5a5;
   border-bottom: 1px solid #e4e4e4;
   background-color: #fbfbfb;
+  text-align: right;
 }
 .refund_table_title:first-child {
-  width: 35%;
+  width: 30%;
+  text-align: center;
 }
 .refund_table_title:last-child {
-  width: 25%;
+  padding-right: 100px;
+  width: 30%;
 }
 .cost {
   text-align: right;
 }
+.cost:last-child {
+  padding-right: 100px;
+}
+
 .refund_table tfoot td {
   border-top: 2px solid #a5a5a5;
   border-bottom: 1px solid #e4e4e4;
@@ -225,6 +241,7 @@ a {
 .join_contents .birth_select_wrap .birth_select {
   height: 30px;
   width: 100%;
+  border: 1px solid #e4e4e4;
   font-size: 12px;
   color: #000;
 }
@@ -281,11 +298,12 @@ a {
   display: block;
   resize: none;
   width: 100%;
+  border: 1px solid #e4e4e4;
   box-sizing: border-box;
 }
 .submit {
   width: 100%;
-  height: 50px; /*임의값*/
+  height: 40px;
   border: 1px #08ab00;
   background-color: #4ec53d;
   font-size: 16px;
@@ -312,8 +330,7 @@ a {
   font-weight: normal;
 }
 .dt_title {
-  padding-left: 0;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
   font-size: 14px;
   color: #000;
   font-weight: bold;
